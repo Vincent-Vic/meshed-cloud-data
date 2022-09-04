@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>cn.meshed.cloud</groupId>
+        <artifactId>meshed-cloud-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath />
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>meshed-cloud-data-mysql-starter</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+
+        <!--
+            数据依赖
+        -->
+        <!-- pagehelper  依赖 -->
+        <pagehelper.boot.version>1.4.2</pagehelper.boot.version>
+        <!-- mybatis plus 依赖 -->
+        <mybatis-plus.version>3.5.2</mybatis-plus.version>
+        <!-- mybatis plus 依赖 -->
+        <mybatis-plus-generator.version>3.4.1</mybatis-plus-generator.version>
+        <mysql-connector.version>8.0.28</mysql-connector.version>
+        <!-- freemarker 依赖 -->
+        <freemarker.version>2.3.30</freemarker.version>
+        <!-- druid 依赖 -->
+        <druid.version>1.2.6</druid.version>
+
+        <!--
+            网格云依赖
+        -->
+        <meshed-cloud-core-starter.version>1.0-SNAPSHOT</meshed-cloud-core-starter.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.meshed.cloud</groupId>
+            <artifactId>meshed-cloud-core-starter</artifactId>
+            <version>${meshed-cloud-core-starter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!--数据库依赖-->
+        <!--MYSQL依赖-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>${mybatis-plus.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-connector.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>${pagehelper.boot.version}</version>
+        </dependency>
+        <!--MYSQL依赖结束-->
+    </dependencies>
+
+</project>
