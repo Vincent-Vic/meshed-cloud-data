@@ -1,9 +1,9 @@
-# meshed-cloud-parent
+# meshed-cloud-data
 
 ## 介绍
 微服务快速开发流平台 [meshed-cloud](cloud.meshed.cn) 
 
-**依赖管理工程**
+**数据依赖管理工程**
 
 
 ## 软件依赖
