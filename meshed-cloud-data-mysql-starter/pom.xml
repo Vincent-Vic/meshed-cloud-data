@@ -5,7 +5,7 @@
     <parent>
         <groupId>cn.meshed.cloud</groupId>
         <artifactId>meshed-cloud-parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath />
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -38,11 +38,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>cn.meshed.cloud</groupId>
-            <artifactId>meshed-cloud-core-starter</artifactId>
-            <version>${meshed-cloud-core-starter.version}</version>
-        </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
