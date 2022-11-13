@@ -35,9 +35,21 @@
             网格云依赖
         -->
         <meshed-cloud-core-starter.version>1.0-SNAPSHOT</meshed-cloud-core-starter.version>
+        <meshed.common.version>1.0.0-SNAPSHOT</meshed.common.version>
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>cn.meshed.base</groupId>
+            <artifactId>meshed-cloud-common-starter</artifactId>
+            <version>${meshed.common.version}</version>
+        </dependency>
+        <!-- Spring Boot自身的自动配置 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>2.6.3</version>
+        </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -64,6 +76,12 @@
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
             <version>${pagehelper.boot.version}</version>
+        </dependency>
+        <!--mybatis plus extension,包含了mybatis plus core-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-extension</artifactId>
+            <version>3.4.3.4</version>
         </dependency>
         <!--MYSQL依赖结束-->
     </dependencies>
