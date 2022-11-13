@@ -16,6 +16,10 @@ import java.util.function.Supplier;
  */
 public class PageUtils {
 
+    public static <E>  PageResponse<E> of(List<E> list, Page<Object> page){
+        return PageResponse.of(list, Math.toIntExact(page.getTotal()), page.getPageSize(), page.getPageNum());
+    }
+
     public static <E,V>  PageResponse<V> of(List<E> list, Page<Object> page, Supplier<V> target){
         List<V> vos = CopyUtils.copyListProperties(list, target);
         return PageResponse.of(vos, Math.toIntExact(page.getTotal()), page.getPageSize(), page.getPageNum());
