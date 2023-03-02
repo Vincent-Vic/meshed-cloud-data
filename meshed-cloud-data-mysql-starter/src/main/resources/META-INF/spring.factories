@@ -1,3 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 cn.meshed.cloud.mysql.MybatisPlusConfiguration,\
-cn.meshed.cloud.mysql.MapperScannerAutoConfiguration
+cn.meshed.cloud.mysql.MapperScannerAutoConfiguration,\
+cn.meshed.cloud.mysql.BaseEntityMetaObjectHandlerAutoConfiguration

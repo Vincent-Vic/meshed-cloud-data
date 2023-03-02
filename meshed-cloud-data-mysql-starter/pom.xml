@@ -15,7 +15,7 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-
+        <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
         <!--
             数据依赖
         -->
@@ -31,11 +31,14 @@
         <!-- druid 依赖 -->
         <druid.version>1.2.6</druid.version>
 
+
         <!--
             网格云依赖
         -->
         <meshed-cloud-core-starter.version>1.0-SNAPSHOT</meshed-cloud-core-starter.version>
         <meshed.common.version>1.0.0-SNAPSHOT</meshed.common.version>
+
+        <meshed.context.version>1.0.0-SNAPSHOT</meshed.context.version>
     </properties>
 
     <dependencies>
@@ -84,6 +87,29 @@
             <version>3.4.3.4</version>
         </dependency>
         <!--MYSQL依赖结束-->
+        <dependency>
+            <groupId>cn.meshed.context</groupId>
+            <artifactId>meshed-cloud-context-starter</artifactId>
+            <version>${meshed.context.version}</version>
+        </dependency>
     </dependencies>
 
+    <!-- Source attach plugin -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>${maven-source-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

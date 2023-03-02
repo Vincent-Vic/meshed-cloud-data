@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.meshed.cloud.stream.StreamBridgeSenderAutoConfiguration

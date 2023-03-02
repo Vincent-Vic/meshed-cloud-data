@@ -17,5 +17,8 @@
     <modules>
         <module>meshed-cloud-data-mysql-starter</module>
         <module>meshed-cloud-data-redis-starter</module>
+        <module>meshed-cloud-stream-starter</module>
+        <module>meshed-cloud-dubbo-starter</module>
+        <module>meshed-cloud-nacos-starter</module>
     </modules>
 </project>

@@ -1,5 +1,7 @@
 package cn.meshed.cloud.mysql;
 
+import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
+import org.apache.ibatis.reflection.MetaObject;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.mapper.MapperScannerConfigurer;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -20,8 +22,8 @@ public class MapperScannerAutoConfiguration {
     public MapperScannerConfigurer mapperScannerConfigurer() {
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
         mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactory");
-        // 设置mybatis mapper接口目录
-        mapperScannerConfigurer.setBasePackage("cn.meshed.cloud.*.gatewayimpl.database.mapper");
+        // 设置mybatis mapper接口目录 todo 修改为扩展
+        mapperScannerConfigurer.setBasePackage("cn.meshed.cloud.*.*.gatewayimpl.database.mapper");
         return mapperScannerConfigurer;
     }
 
