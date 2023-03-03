@@ -2,7 +2,6 @@ package cn.meshed.cloud.stream;
 
 import cn.meshed.cloud.dto.Event;
 import cn.meshed.cloud.context.SecurityContext;
-import cn.meshed.cloud.dto.Operator;
 import cn.meshed.cloud.dto.SecurityEvent;
 import org.springframework.cloud.stream.function.StreamBridge;
 import org.springframework.lang.Nullable;

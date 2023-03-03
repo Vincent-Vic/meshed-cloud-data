@@ -1,6 +1,6 @@
 package cn.meshed.cloud.utils;
 
-import cn.meshed.base.utils.CopyUtils;
+import cn.meshed.cloud.utils.CopyUtils;
 import com.alibaba.cola.dto.PageResponse;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
