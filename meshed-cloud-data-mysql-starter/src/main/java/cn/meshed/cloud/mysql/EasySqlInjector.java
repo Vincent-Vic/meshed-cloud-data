@@ -1,11 +1,9 @@
 package cn.meshed.cloud.mysql;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.core.injector.AbstractMethod;
 import com.baomidou.mybatisplus.core.injector.DefaultSqlInjector;
 import com.baomidou.mybatisplus.core.metadata.TableInfo;
-import com.baomidou.mybatisplus.extension.injector.methods.AlwaysUpdateSomeColumnById;
-import com.baomidou.mybatisplus.extension.injector.methods.InsertBatchSomeColumn;
+
 import java.util.List;
 
 /**
@@ -23,7 +21,7 @@ public class EasySqlInjector extends DefaultSqlInjector {
 //        methodList.add(new InsertBatch(i -> i.getFieldFill() != FieldFill.UPDATE));
 //        methodList.add(new AlwaysUpdateSomeColumnById(i -> i.getFieldFill() != FieldFill.UPDATE));
         methodList.add(new InsertBatchMethod());
-        methodList.add(new UpdateBatchByIdMethod());
+        methodList.add(new UpdateBatchMethod());
         return methodList;
     }
 }
