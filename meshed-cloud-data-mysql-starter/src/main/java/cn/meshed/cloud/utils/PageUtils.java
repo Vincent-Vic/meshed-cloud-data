@@ -1,6 +1,7 @@
 package cn.meshed.cloud.utils;
 
 import cn.meshed.cloud.utils.CopyUtils;
+import com.alibaba.cola.dto.PageQuery;
 import com.alibaba.cola.dto.PageResponse;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
@@ -27,5 +28,9 @@ public class PageUtils {
 
     public static <E> Page<E> startPage(int pageNum, int pageSize) {
         return PageHelper.startPage(pageNum, pageSize);
+    }
+
+    public static <E> Page<E> startPage(PageQuery pageQuery) {
+        return PageHelper.startPage(pageQuery.getPageIndex(), pageQuery.getPageSize());
     }
 }
