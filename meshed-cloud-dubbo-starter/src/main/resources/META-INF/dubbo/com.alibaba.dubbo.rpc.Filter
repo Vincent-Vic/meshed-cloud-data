@@ -1,0 +1,2 @@
+securityProviderFilter=cn.meshed.cloud.dubbo.filter.SecurityProviderFilter
+securityConsumerFilter=cn.meshed.cloud.dubbo.filter.SecurityConsumerFilter
