@@ -22,4 +22,12 @@ public class StreamBridgeSenderAutoConfiguration {
     public StreamBridgeSender streamBridgeSender(){
         return new StreamBridgeSender(streamBridge);
     }
+    @Bean
+    public EventContextAspect eventContextAspect(){
+        return new EventContextAspect();
+    }
+    @Bean
+    public EventInjectAspect eventInjectAspect(){
+        return new EventInjectAspect();
+    }
 }
